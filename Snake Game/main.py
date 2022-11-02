@@ -26,8 +26,8 @@ while game_on:
         food.refresh()
         my_snake.extend()
         score.update_score()
-    if my_snake.segments[0].xcor() > 280 or my_snake.segments[0].ycor() > 280 or my_snake.segments[0].xcor() < -280 or \
-            my_snake.segments[0].ycor() < -280:
+    if my_snake.segments[0].xcor() > 290 or my_snake.segments[0].ycor() > 290 or my_snake.segments[0].xcor() < -290 or \
+            my_snake.segments[0].ycor() < -290:
         game_on = False
         score.game_over()
     for seg in my_snake.segments:
